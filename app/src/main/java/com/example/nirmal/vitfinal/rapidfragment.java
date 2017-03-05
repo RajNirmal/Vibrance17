@@ -34,48 +34,23 @@ View m;
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
       m=inflater.inflate(R.layout.fragment_rapidfragment, container, false);
-
-
-        b1=(Button)m.findViewById(R.id.button9);
-        b2=(Button)m.findViewById(R.id.button11);
-
-
-        b1.setOnClickListener(new View.OnClickListener() {
+      b1=(Button)m.findViewById(R.id.button9);
+      b2=(Button)m.findViewById(R.id.button11);
+      b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                String phone="tel:9597108145";
-
-
-
-call();
-
-
-
-
-            }
+            String phone="tel:9597108145";
+            call();
+       }
         });
-
-        b2.setOnClickListener(new View.OnClickListener() {
+      b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                String phone="tel:9597108145";
-
-
-
-            brow();
-
-
-
-
-            }
-        });
-
-
-return m;
-
-
+             String phone="tel:9597108145";
+             brow();
+     }});
+        ((MainActivity)getActivity()).setActionBarTitle("RapidFire");
+    return m;
     }
     private void call() {
 
